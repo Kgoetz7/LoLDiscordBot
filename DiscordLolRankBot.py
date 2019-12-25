@@ -7,6 +7,7 @@ client = commands.Bot(command_prefix="!")
 
 @client.event
 async def on_ready():
+    ''' Prints when the bot is online and ready '''
     print("Bot is ready")
 
 @client.command()
@@ -37,4 +38,4 @@ async def rank(self, *accts):
         except AttributeError as error:
                 await self.send(aurl + '\n' + 'Summoner Name: ' + an + '\n' + 'Current Rank: ' + (ar[9:]))
 	    
-client.run("NjU0Mzk0MTEzNDk5NzI1ODI0.XffA5A.Vc3O9a2T3nOa9Q9ReuIH21tbpPU")
+client.run("NjU0Mzk0MTEzNDk5NzI1ODI0.XgO-fA.8s-3OH3K4HUZCsY479QcxoJ_uMQ")
